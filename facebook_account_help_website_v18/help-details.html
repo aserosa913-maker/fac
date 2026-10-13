@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0866ff">
+<title>Facebook Account Help Guide</title>
+<style>
+:root{--blue:#0866ff;--dark:#0756d8;--ink:#1c2b33;--muted:#536471;--line:#dce3ea;--bg:#f0f2f5;--pale:#e7f0ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.62 Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:var(--blue);font-weight:700}
+.top{background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 12px #1c2b3310}.nav{max-width:1180px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:13px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:34px;font-weight:800}.brandname{font-size:20px;font-weight:800;line-height:1.2}.sub{font-size:13px;color:var(--muted)}.call{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:#fff!important;text-decoration:none;border-radius:10px;padding:13px 18px;font-weight:800;white-space:nowrap}.wrap{width:min(100% - 44px,1050px);margin:auto}.hero{padding:43px 0 28px;background:linear-gradient(125deg,#e3eeff,#f6f9ff);border-bottom:1px solid #dce7f7}.back{display:inline-block;text-decoration:none;font-size:16px;margin-bottom:16px}.pill{display:inline-block;background:#d4e5ff;color:#064fc5;padding:7px 12px;border-radius:99px;font-size:14px;font-weight:800}h1{font-size:clamp(34px,4.2vw,52px);line-height:1.12;letter-spacing:-1.3px;color:#152d4a;margin:15px 0}.lead{font-size:20px;color:#42566b;margin:0;max-width:850px}.section{padding:32px 0}.section h2{font-size:29px;margin:0 0 12px}.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.result,.guide,.assist{background:#fff;border:1px solid var(--line);border-radius:16px;padding:23px}.result h3{font-size:22px;margin:0 0 8px}.result p{color:var(--muted);margin:0 0 14px}.guide{margin-top:22px}.guide h2{margin-top:0}.guide ol{padding-left:24px}.guide li{margin:9px 0}.assist{margin-top:22px;border-left:5px solid var(--blue);display:flex;align-items:center;justify-content:space-between;gap:20px}.assist h2{font-size:25px;margin:0 0 5px}.assist p{color:var(--muted);margin:0}.phone{font-size:28px;font-weight:850;white-space:nowrap;margin:6px 0 12px}.foot{color:#718096;font-size:13px;font-weight:400;padding:24px 0 35px;border-top:1px solid var(--line);margin-top:26px}.foot strong{color:#536471;font-weight:600}
+.hero-art{position:relative;height:170px;max-width:280px;margin-top:24px;border-radius:20px;background:linear-gradient(145deg,#dceaff,#f7faff);border:1px solid #d8e5fa;display:grid;place-items:center;overflow:hidden}
+.art-circle{position:absolute;width:140px;height:140px;border:1px solid #b9d2fb;border-radius:50%;animation:orbit 18s linear infinite}
+.art-shield{font-size:65px;filter:drop-shadow(0 10px 15px #0866ff22);animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.art-circle,.art-shield{animation:none}}
+@media(max-width:700px){.nav{padding:12px 14px;align-items:flex-start}.logo{width:38px;height:38px;font-size:29px}.brandname{font-size:16px}.sub{font-size:11px}.nav .call{font-size:13px;padding:10px}.wrap{width:calc(100% - 30px)}.hero{padding:29px 0 23px}h1{font-size:36px}.lead{font-size:18px}.results{grid-template-columns:1fr}.assist{align-items:flex-start;flex-direction:column}.assist .call{width:100%}.phone{font-size:26px}}
+
+/* Mobile-first fit and overflow fixes */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+.wrap{width:min(100% - 32px,1050px)}
+.nav,.brand,.assist,.result,.guide{min-width:0}
+.brandname,.lead,.result p,.assist p{overflow-wrap:anywhere}
+@media(max-width:700px){
+ .nav{padding:10px 12px;gap:8px;align-items:center}
+ .brand{gap:7px;flex:1 1 auto}
+ .logo{width:34px;height:34px;flex:0 0 34px;font-size:27px}
+ .brandname{font-size:14px;line-height:1.2;letter-spacing:-.2px}
+ .sub{font-size:10px}
+ .nav .call{font-size:12px;padding:9px 10px;white-space:normal;text-align:center;max-width:132px}
+ .wrap{width:calc(100% - 28px);max-width:100%}
+ .hero{padding:25px 0 23px}
+ h1{font-size:clamp(30px,8.5vw,38px);line-height:1.1;letter-spacing:-.7px;overflow-wrap:anywhere}
+ .lead{font-size:17px;line-height:1.5}
+ .hero-art{max-width:100%;height:135px}
+ .section{padding:25px 0}
+ .section h2{font-size:25px;line-height:1.2}
+ .results{grid-template-columns:minmax(0,1fr);gap:12px}
+ .result,.guide,.assist{padding:18px;border-radius:14px;min-width:0}
+ .result h3{font-size:20px;line-height:1.3;overflow-wrap:anywhere}
+ .result p{font-size:16px}
+ .guide li{font-size:16px;overflow-wrap:anywhere}
+ .assist{flex-direction:column;align-items:stretch;gap:14px}
+ .assist h2{font-size:22px}
+ .assist .call{width:100%;max-width:100%;white-space:normal}
+ .phone{font-size:25px}
+ .foot{font-size:12px;overflow-wrap:anywhere}
+ .footer-about{font-size:10px;max-width:100%}
+}
+@media(max-width:380px){
+ .wrap{width:calc(100% - 24px)}
+ .brandname{font-size:12px}
+ .nav .call{max-width:116px;font-size:11px;padding:8px}
+ h1{font-size:29px}
+}
+
+.footer-about{font-size:14px;color:#718096;font-weight:400;line-height:1.6;flex-basis:100%;text-align:center;margin-bottom:8px;max-width:100%}
+@media(max-width:700px){.footer-about{font-size:13px;text-align:left}}
+</style></head><body>
+<header class="top"><nav class="nav"><div class="brand"><div class="logo">f</div><div><div class="brandname">Facebook Account Help Guide</div><div class="sub">Guidance for common account issues</div></div></div><a class="call" href="tel:5077220465">☎ Call 507-722-0465</a></nav></header>
+<main><section class="hero"><div class="wrap"><a class="back" href="index.html">← Back to all help topics</a><br><span class="pill">ACCOUNT HELP GUIDE</span><h1 id="pageTitle">Help with your account</h1><p class="lead" id="pageIntro">Review these options and follow the steps to find relevant guidance.</p><div class="hero-art" aria-hidden="true"><div class="art-circle"></div><div class="art-shield">🛡️</div></div></div></section>
+<section class="section"><div class="wrap"><h2>Help options for your issue</h2><p class="lead" style="font-size:17px;margin:0 0 16px">Review these suggested options, then follow the step-by-step guide below.</p><div class="results" id="results"></div>
+<article class="guide"><h2>Suggested steps to get help</h2><ol id="steps"></ol><p> </p></article>
+<aside class="assist"><div><h2>Need customer assistance?</h2><p>Get help finding the right account topic and understanding common troubleshooting steps.</p><div class="phone">507-722-0465</div><p>Get guidance for common account issues, troubleshooting steps, login access, security settings and profile problems.</p></div><a class="call" href="tel:5077220465">☎ Call 507-722-0465</a></aside>
+<div class="foot"><div class="footer-about"><strong>Service Notice:</strong> We provide guidance for Facebook account issues. We are not Facebook or Meta support. For official help, visit <a href="https://www.facebook.com/help/">Meta’s Help Center</a>.</div><div>© <span id="year"></span> Facebook Account Help Guide. All rights reserved.</div></div>
+</div></section></main>
+<script>
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
+
+const params = new URLSearchParams(location.search);
+const title = params.get('topic') || 'Account help';
+const description = params.get('description') || 'Review the options and steps below to find guidance for this account issue.';
+document.title = title + ' | Facebook Account Help Guide';
+document.getElementById('pageTitle').textContent = title;
+document.getElementById('pageIntro').textContent = description;
+
+const results = document.getElementById('results');
+const optionCard = document.createElement('article');
+optionCard.className = 'result';
+const optionTitle = document.createElement('h3');
+optionTitle.textContent = 'Guidance for ' + title.toLowerCase();
+const optionDescription = document.createElement('p');
+optionDescription.textContent = description;
+const optionNote = document.createElement('p');
+optionNote.textContent = 'Use the steps below to check the issue, review your account settings, and identify the next action that fits your situation.';
+optionCard.append(optionTitle, optionDescription, optionNote);
+results.append(optionCard);
+
+const steps = document.getElementById('steps');
+const t = title.toLowerCase();
+let guide;
+if (/hack|compromis|stolen|security/.test(t)) {
+  guide = [
+    'Confirm whether you can still sign in to your account from a device you normally use.',
+    'Review recent login activity and sign out of sessions or devices you do not recognize, if that option is available.',
+    'Change your password to a strong, unique password and secure the email account or phone number connected to your profile.',
+    'Review your profile details, posts, messages, and connected apps for changes you did not make.',
+    'If you cannot regain access, follow the account recovery steps provided by Facebook in its app or website.'
+  ];
+} else if (/login|log in|password|verification|code|access/.test(t)) {
+  guide = [
+    'Check that you entered the correct email address, phone number, or username and look for typing mistakes.',
+    'Use the password-reset or account-identification options available on the sign-in screen.',
+    'Check access to the email address or phone number associated with your account.',
+    'If a verification code is requested, use the newest code and enter it only in the official app or website.',
+    'If the problem continues, note the exact error message and follow the recovery options shown for your account.'
+  ];
+} else if (/disabled|locked|restricted|appeal/.test(t)) {
+  guide = [
+    'Read the notice displayed when you try to sign in to understand the restriction.',
+    'Check whether the notice offers a review, confirmation, or appeal option.',
+    'Follow the instructions shown in the official app or website and submit accurate information.',
+    'Keep any confirmation or reference details provided after submitting a request.',
+    'Avoid submitting repeated requests if the page says a review is already in progress.'
+  ];
+} else if (/privacy|profile|name|birthday|email|phone/.test(t)) {
+  guide = [
+    'Open your account settings and locate the profile or privacy section related to the issue.',
+    'Review the current information and settings before making changes.',
+    'Update only the fields you need to change and follow any confirmation prompts.',
+    'Check the result from your profile or settings page after saving.',
+    'If a setting is unavailable, note the message shown and look for the related account-help topic.'
+  ];
+} else if (/page|marketplace|payment|ads|business/.test(t)) {
+  guide = [
+    'Confirm which Page, listing, payment, or business account is affected.',
+    'Review the status message and any notifications shown in the relevant section.',
+    'Check that you are signed into the account with the correct access or role.',
+    'Record any error message and the action that triggered it.',
+    'Follow the review or troubleshooting options available in the relevant account tools.'
+  ];
+} else {
+  guide = [
+    'Confirm that this topic matches the issue you are experiencing.',
+    'Try the basic troubleshooting step relevant to the issue, such as reopening the app or checking your connection.',
+    'Review the account settings related to the problem and note any messages shown.',
+    'If the problem continues, record the exact error message and when it appears.',
+    'Use the customer assistance number on this page if you would like help identifying the appropriate next step.'
+  ];
+}
+guide.forEach(text => {
+  const li = document.createElement('li');
+  li.textContent = text;
+  steps.append(li);
+});
+</script></body></html>

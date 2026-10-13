@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0866ff">
+<title>Facebook Account Help Guide</title>
+<style>
+:root{--fb:#0866ff;--fb-dark:#0756d8;--ink:#1c2b33;--muted:#536471;--line:#dce3ea;--canvas:#f0f2f5;--pale:#e7f0ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--canvas);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
+a{color:var(--fb);font-weight:700}.top{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 12px #1c2b3310}
+.nav{max-width:1440px;margin:auto;padding:15px 30px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:13px;min-width:0}.logo{width:48px;height:48px;flex:0 0 48px;border-radius:14px;background:var(--fb);color:#fff;display:grid;place-items:center;font-size:37px;font-weight:800;line-height:1}.brandname{font-size:22px;font-weight:800;line-height:1.2;letter-spacing:-.4px}.brandsub{font-size:14px;color:var(--muted);margin-top:3px}.navright{display:flex;align-items:center;justify-content:flex-end;gap:20px}.navtitle{font-size:17px;font-weight:750;text-align:right;color:#344854}.call{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--fb);color:#fff!important;text-decoration:none;border-radius:10px;padding:14px 20px;font-weight:800;box-shadow:0 4px 12px #0866ff24;white-space:nowrap;transition:background .18s,transform .18s}.call:hover{background:var(--fb-dark);transform:translateY(-1px)}
+.wrap{width:min(100% - 60px,1380px);margin-inline:auto}.hero{background:linear-gradient(125deg,#e3eeff 0%,#f6f9ff 55%,#edf4ff 100%);border-bottom:1px solid #dce7f7;padding:64px 0 60px}.heroGrid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(340px,.75fr);gap:54px;align-items:center}.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:99px;background:#d4e5ff;color:#064fc5;font-size:14px;font-weight:800;letter-spacing:.35px}h1{font-size:clamp(42px,4.4vw,68px);line-height:1.05;letter-spacing:-2px;color:#152d4a;margin:20px 0 22px;max-width:850px}.lead{font-size:clamp(20px,1.6vw,23px);line-height:1.6;color:#42566b;max-width:780px;margin:0}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:29px 0 12px}.call.primary{font-size:19px;padding:17px 23px}.secondary{display:inline-flex;align-items:center;justify-content:center;border:1px solid #9dbff4;border-radius:10px;background:#fff;padding:16px 21px;color:#0756d8;text-decoration:none;font-weight:800}.helper{background:#fff;border:1px solid #dce5ef;border-radius:22px;padding:30px;box-shadow:0 18px 50px #1d4c8b14}.helperTop{display:flex;align-items:center;gap:13px;margin-bottom:16px}.helperIcon{width:54px;height:54px;border-radius:16px;background:var(--pale);display:grid;place-items:center;font-size:28px}.helper h2{font-size:27px;line-height:1.2;margin:0}.helper p{font-size:18px;color:var(--muted);margin:0 0 18px}.phone{font-size:30px;letter-spacing:.3px;font-weight:850;color:#172b4d;margin-bottom:17px}.note{font-size:15px!important;line-height:1.55;margin:15px 0 0!important}
+.section{padding:58px 0}.section h2{font-size:clamp(30px,3vw,42px);line-height:1.2;letter-spacing:-.8px;margin:0 0 12px}.intro{font-size:20px;color:var(--muted);max-width:850px;margin:0 0 30px}.searchrow{display:flex;gap:12px;max-width:660px;margin:0 0 27px}.searchrow input{width:100%;min-width:0;border:1px solid #cbd5df;border-radius:11px;padding:15px 17px;font:inherit;background:#fff;color:var(--ink)}.searchrow input:focus{outline:3px solid #cfe0ff;border-color:var(--fb)}.searchrow button{border:0;border-radius:11px;background:var(--fb);color:#fff;padding:0 22px;font:inherit;font-weight:800;cursor:pointer}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}.card{display:flex;flex-direction:column;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;min-height:255px;box-shadow:0 4px 16px #1c2b3307;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px #1c2b3312}.icon{width:52px;height:52px;border-radius:15px;background:var(--pale);display:grid;place-items:center;font-size:27px;margin-bottom:15px}.card h3{font-size:23px;line-height:1.25;margin:0 0 9px}.card p{font-size:18px;line-height:1.55;color:var(--muted);margin:0 0 18px}.card a{margin-top:auto;text-decoration:none;font-size:17px}.card a:hover{text-decoration:underline}.empty{display:none;background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;color:var(--muted)}
+.band{display:flex;align-items:center;justify-content:space-between;gap:28px;background:#fff;border:1px solid var(--line);border-left:6px solid var(--fb);border-radius:17px;padding:32px}.band h2{font-size:30px;margin:0 0 8px}.band p{font-size:18px;color:var(--muted);margin:0;max-width:850px}.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px}.stepNum{width:42px;height:42px;border-radius:50%;background:var(--pale);color:#0756d8;font-size:19px;font-weight:850;display:grid;place-items:center;margin-bottom:14px}.step h3{font-size:22px;margin:0 0 8px}.step p{font-size:18px;color:var(--muted);margin:0}.safety{background:#fff;border:1px solid var(--line);border-radius:17px;padding:29px}.safety h3{font-size:26px;margin:0 0 10px}.safety li{margin:7px 0;color:#425466}footer{background:#fff;border-top:1px solid var(--line);padding:30px 0;color:#637381;font-size:15px}.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.foot strong{color:#344854}
+
+/* Properly constrained decorative artwork */
+.hero-art{position:relative;width:100%;max-width:560px;min-height:260px;margin-top:26px;display:grid;place-items:center;overflow:hidden;border-radius:24px;background:linear-gradient(145deg,#e5efff,#f8fbff 72%);border:1px solid #d8e5fa}
+.art-orbit{position:absolute;width:210px;height:210px;border:1px solid #b9d2fb;border-radius:50%;animation:orbit 18s linear infinite}
+.art-orbit:before,.art-orbit:after{content:"";position:absolute;border-radius:50%;background:#0866ff}
+.art-orbit:before{width:10px;height:10px;top:22px;left:30px}.art-orbit:after{width:8px;height:8px;right:12px;bottom:48px;background:#5ca5ff}
+.art-shield{position:relative;z-index:1;width:88px;height:102px;display:grid;place-items:center;filter:drop-shadow(0 12px 18px #0866ff24);animation:float 4.5s ease-in-out infinite}
+.art-shield svg{display:block;width:88px;height:102px;max-width:100%;max-height:100%}
+.art-dot{position:absolute;width:52px;height:52px;right:17%;top:17%;border-radius:17px;background:#fff;box-shadow:0 12px 28px #234a7415;display:grid;place-items:center;font-size:25px;animation:float 5s ease-in-out infinite reverse}
+.art-card{position:absolute;left:9%;bottom:12%;border:1px solid #dbe7f7;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 12px 28px #234a7415;font-size:13px;color:#637381}
+.art-card b{display:block;color:#344854;font-size:15px;font-weight:600}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@media(max-width:650px){.hero-art{min-height:210px;max-width:100%}.art-orbit{width:160px;height:160px}.art-dot{right:12%;top:14%}.art-card{left:5%;bottom:9%}}
+@media(prefers-reduced-motion:reduce){.art-orbit,.art-shield,.art-dot,.art-card{animation:none}}
+
+@media(max-width:1000px){.heroGrid{grid-template-columns:1fr;gap:30px}.helper{max-width:700px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:1fr}}
+@media(max-width:650px){body{font-size:18px}.nav{padding:12px 15px;align-items:flex-start;gap:10px}.logo{width:39px;height:39px;flex-basis:39px;font-size:30px;border-radius:11px}.brand{gap:9px}.brandname{font-size:16px}.brandsub{font-size:11px}.navright{flex-direction:column;align-items:flex-end;gap:7px}.navtitle{font-size:12px;max-width:145px}.nav .call{font-size:13px;padding:9px 10px}.wrap{width:calc(100% - 32px)}.hero{padding:37px 0}.heroGrid{gap:25px}h1{font-size:40px;letter-spacing:-1.1px}.lead{font-size:19px}.actions{flex-direction:column;align-items:stretch}.actions a{width:100%;text-align:center}.helper{padding:22px;border-radius:17px}.helper h2{font-size:24px}.phone{font-size:27px}.section{padding:40px 0}.intro{font-size:18px}.searchrow{gap:8px}.searchrow input{padding:12px;font-size:16px}.searchrow button{padding:0 14px;font-size:16px}.cards{grid-template-columns:1fr;gap:14px}.card{min-height:0;padding:22px}.card h3{font-size:22px}.band{align-items:flex-start;flex-direction:column;padding:23px}.band h2{font-size:26px}.band .call{width:100%;white-space:normal}.foot{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Mobile-first fit and overflow fixes */
+html{width:100%;max-width:100%;overflow-x:hidden}
+body{width:100%;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+.wrap{width:min(100% - 32px,1380px)}
+.nav{width:100%;min-width:0}
+.brand{min-width:0}
+.brandname{overflow-wrap:anywhere}
+.navright{min-width:0}
+.heroGrid>*{min-width:0}
+.lead,.intro,.card p,.helper p,.band p{overflow-wrap:anywhere}
+.searchrow{width:100%;min-width:0}
+.searchrow input{min-width:0;width:100%}
+.card,.helper,.step,.safety,.band{min-width:0}
+@media(max-width:650px){
+  .wrap{width:calc(100% - 28px);max-width:100%}
+  .nav{padding:10px 12px;gap:8px;align-items:center}
+  .brand{gap:7px;flex:1 1 auto}
+  .logo{width:34px;height:34px;flex:0 0 34px;font-size:27px}
+  .brandname{font-size:14px;line-height:1.2;letter-spacing:-.2px}
+  .brandsub{font-size:10px;line-height:1.3}
+  .navright{flex:0 1 auto;gap:5px}
+  .navtitle{display:none}
+  .nav .call{font-size:12px;line-height:1.25;padding:9px 10px;white-space:normal;text-align:center;max-width:132px}
+  .hero{padding:28px 0 30px}
+  .heroGrid{grid-template-columns:minmax(0,1fr);gap:20px}
+  h1{font-size:clamp(32px,9vw,40px);line-height:1.08;letter-spacing:-.8px;overflow-wrap:anywhere}
+  .lead{font-size:17px;line-height:1.5}
+  .pill{font-size:11px;letter-spacing:.1px;max-width:100%;white-space:normal}
+  .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+  .actions a,.call.primary,.secondary{width:100%;max-width:100%;white-space:normal;text-align:center;font-size:16px;padding:13px 14px}
+  .hero-art{min-height:190px;width:100%;max-width:100%;margin-top:20px}
+  .helper{padding:20px;border-radius:16px}
+  .helper h2{font-size:23px}
+  .phone{font-size:clamp(23px,7vw,28px);overflow-wrap:anywhere}
+  .section{padding:34px 0}
+  .section h2{font-size:29px;line-height:1.2}
+  .intro{font-size:17px;line-height:1.5}
+  .searchrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+  .searchrow input{font-size:16px;padding:12px}
+  .searchrow button{font-size:15px;padding:0 14px}
+  .cards{grid-template-columns:minmax(0,1fr);gap:13px}
+  .card{padding:20px;min-height:0;border-radius:15px}
+  .card h3{font-size:21px;line-height:1.3;overflow-wrap:anywhere}
+  .card p{font-size:17px;line-height:1.5}
+  .card a{font-size:16px}
+  .band{padding:20px;gap:16px}
+  .band h2{font-size:24px}
+  .band p{font-size:16px}
+  .band .call{width:100%;max-width:100%;white-space:normal}
+  .steps{grid-template-columns:minmax(0,1fr);gap:13px}
+  .step{padding:20px}
+  .step h3{font-size:20px}
+  .step p{font-size:16px}
+  .safety{padding:20px}
+  footer{padding:18px 0}
+  .foot{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+  .footer-about{font-size:10px;max-width:100%}
+}
+@media(max-width:380px){
+  .brandname{font-size:12px}
+  .nav .call{max-width:116px;font-size:11px;padding:8px}
+  .wrap{width:calc(100% - 24px)}
+  h1{font-size:31px}
+  .card{padding:17px}
+}
+
+.footer-about{font-size:14px;color:#718096;font-weight:400;line-height:1.6;flex-basis:100%;text-align:center;margin-bottom:8px;max-width:100%}
+@media(max-width:650px){.footer-about{font-size:13px;text-align:left}}
+</style></head><body>
+<header class="top"><nav class="nav" aria-label="Main navigation"><div class="brand"><div class="logo" aria-hidden="true">f</div><div><div class="brandname">Facebook Account Help Guide</div><div class="brandsub">Guidance for common account issues</div></div></div><div class="navright"><div class="navtitle">Facebook Help Centre Guide</div><a class="call" href="tel:5077220465">☎ Call 507-722-0465</a></div></nav></header>
+<main>
+<section class="hero"><div class="wrap heroGrid"><div><span class="pill">ACCOUNT ACCESS · SECURITY · SETTINGS</span><h1>Find guidance for your Facebook account issue</h1><p class="lead">Explore common solutions for login trouble, hacked accounts, password recovery, account restrictions, verification, privacy, profiles, Pages and Marketplace.</p><div class="actions"><a class="call primary" href="tel:5077220465">☎ Customer Assistance: 507-722-0465</a><a class="secondary" href="#topics">Browse all help topics ↓</a></div>
+<div class="hero-art" aria-hidden="true"><div class="art-orbit"></div><div class="art-dot">🔒</div><div class="art-shield"><svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 5L105 22V61C105 93 86 117 60 133C34 117 15 93 15 61V22L60 5Z" fill="#0866ff"/><path d="M60 17L94 30V61C94 85 81 103 60 117C39 103 26 85 26 61V30L60 17Z" fill="#fff"/><path d="M45 65L55 75L77 50" stroke="#0866ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="art-card"><b>Account guidance</b>Clear steps for common issues</div></div></div><aside class="helper"><div class="helperTop"><div class="helperIcon">💬</div><div><h2>Customer assistance</h2><div style="color:#536471;font-size:15px">Facebook account guidance</div></div></div><p>Looking for help with a specific account problem? Browse the topics below or contact our assistance service.</p><div class="phone">507-722-0465</div><a class="call" href="tel:5077220465">Call customer assistance</a><p class="note">Get guidance for common Facebook account issues, including login, account recovery, security, privacy, Pages and Marketplace.</p></aside></div></section>
+<section class="section" id="topics"><div class="wrap"><h2>What do you need help with?</h2><p class="intro">Search for your problem to open a dedicated page with matching options, step-by-step guidance and customer assistance.</p><form class="searchrow" id="topicForm"><input id="topicSearch" type="search" placeholder="Search issues, e.g. hacked account" aria-label="Search help topics"><button type="submit">Search</button></form><div class="cards" id="cards">
+<article class="card" data-terms="hacked hack stolen compromised security suspicious login"><div class="icon">🔐</div><h3>Hacked or compromised account</h3><p>Secure an account you think someone else accessed, and review recovery steps</p><a href="help-details.html?topic=Hacked%20or%20compromised%20account&description=Secure%20an%20account%20you%20think%20someone%20else%20accessed%2C%20and%20review%20recovery%20steps&url=https%3A%2F%2Fwww.facebook.com%2Fhacked">View help details ↗</a></article>
+<article class="card" data-terms="login log in password forgot access identify account"><div class="icon">🔑</div><h3>Can't log in or forgot password</h3><p>Find your account and review available password reset and recovery options</p><a href="help-details.html?topic=Can%27t%20log%20in%20or%20forgot%20password&description=Find%20your%20account%20and%20review%20available%20password%20reset%20and%20recovery%20options&url=https%3A%2F%2Fwww.facebook.com%2Flogin%2Fidentify">View help details ↗</a></article>
+<article class="card" data-terms="disabled suspended restricted locked account appeal banned"><div class="icon">⛔</div><h3>Disabled, locked or restricted account</h3><p>Understand account notices and look for appeal options available to you</p><a href="help-details.html?topic=Disabled%2C%20locked%20or%20restricted%20account&description=Understand%20account%20notices%20and%20look%20for%20appeal%20options%20available%20to%20you&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="verification code sms text email two factor authentication 2fa login"><div class="icon">📲</div><h3>Verification code or two-factor login</h3><p>Get guidance for missing codes, login approvals and two-factor authentication</p><a href="help-details.html?topic=Verification%20code%20or%20two-factor%20login&description=Get%20guidance%20for%20missing%20codes%2C%20login%20approvals%20and%20two-factor%20authentication&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="email phone number changed update contact details"><div class="icon">✉️</div><h3>Email or phone number changed</h3><p>Find guidance if you lost access to the email or phone number on your account</p><a href="help-details.html?topic=Email%20or%20phone%20number%20changed&description=Find%20guidance%20if%20you%20lost%20access%20to%20the%20email%20or%20phone%20number%20on%20your%20account&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="fake profile impersonation pretending report identity"><div class="icon">👤</div><h3>Fake profile or impersonation</h3><p>Learn how to report a profile pretending to be you or another person</p><a href="help-details.html?topic=Fake%20profile%20or%20impersonation&description=Learn%20how%20to%20report%20a%20profile%20pretending%20to%20be%20you%20or%20another%20person&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F174210519303259">View help details ↗</a></article>
+<article class="card" data-terms="privacy settings audience posts personal information"><div class="icon">🛡️</div><h3>Privacy and security settings</h3><p>Review privacy controls, login alerts and ways to protect your information</p><a href="help-details.html?topic=Privacy%20and%20security%20settings&description=Review%20privacy%20controls%2C%20login%20alerts%20and%20ways%20to%20protect%20your%20information&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="hacked page admin access page role business page"><div class="icon">📄</div><h3>Facebook Page access</h3><p>Find guidance about Page access, roles, admins and managing a Page</p><a href="help-details.html?topic=Facebook%20Page%20access&description=Find%20guidance%20about%20Page%20access%2C%20roles%2C%20admins%20and%20managing%20a%20Page&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="marketplace buy sell listing missing blocked access order"><div class="icon">🛍️</div><h3>Marketplace issues</h3><p>Look for help with listings, buying, selling or Marketplace access</p><a href="help-details.html?topic=Marketplace%20issues&description=Look%20for%20help%20with%20listings%2C%20buying%2C%20selling%20or%20Marketplace%20access&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="posts comments photos videos missing removed content"><div class="icon">🖼️</div><h3>Missing posts, photos or videos</h3><p>Find help for content you can't see, posts that disappeared or content notices</p><a href="help-details.html?topic=Missing%20posts%2C%20photos%20or%20videos&description=Find%20help%20for%20content%20you%20can%27t%20see%2C%20posts%20that%20disappeared%20or%20content%20notices&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="name birthday date of birth profile edit change"><div class="icon">🪪</div><h3>Name, birthday or profile changes</h3><p>Find instructions for profile details and personal information settings</p><a href="help-details.html?topic=Name%2C%20birthday%20or%20profile%20changes&description=Find%20instructions%20for%20profile%20details%20and%20personal%20information%20settings&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="notifications not receiving alert settings"><div class="icon">🔔</div><h3>Notifications not working</h3><p>Review notification settings and common reasons alerts may not appear</p><a href="help-details.html?topic=Notifications%20not%20working&description=Review%20notification%20settings%20and%20common%20reasons%20alerts%20may%20not%20appear&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="friend request blocked can't add friends"><div class="icon">🤝</div><h3>Friend requests and connections</h3><p>Find guidance for friend requests, connection limits and account settings</p><a href="help-details.html?topic=Friend%20requests%20and%20connections&description=Find%20guidance%20for%20friend%20requests%2C%20connection%20limits%20and%20account%20settings&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="duplicate merge deactivated delete profile"><div class="icon">👥</div><h3>Duplicate profiles or account deletion</h3><p>Review options for deactivation, deletion and managing profiles</p><a href="help-details.html?topic=Duplicate%20profiles%20or%20account%20deletion&description=Review%20options%20for%20deactivation%2C%20deletion%20and%20managing%20profiles&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+<article class="card" data-terms="payment ads billing ad account business manager"><div class="icon">💳</div><h3>Payments, ads or business tools</h3><p>Find relevant help resources for billing, ads and business account tools</p><a href="help-details.html?topic=Payments%2C%20ads%20or%20business%20tools&description=Find%20relevant%20help%20resources%20for%20billing%2C%20ads%20and%20business%20account%20tools&url=https%3A%2F%2Fwww.facebook.com%2Fbusiness%2Fhelp">View help details ↗</a></article>
+<article class="card" data-terms="app not loading error crash update browser settings"><div class="icon">⚙️</div><h3>App errors or settings problems</h3><p>Look for troubleshooting help with settings, loading issues and app behavior</p><a href="help-details.html?topic=App%20errors%20or%20settings%20problems&description=Look%20for%20troubleshooting%20help%20with%20settings%2C%20loading%20issues%20and%20app%20behavior&url=https%3A%2F%2Fwww.facebook.com%2Fhelp%2F">View help details ↗</a></article>
+</div><p class="empty" id="empty">No exact match. Try another search term or browse all help topics.</p></div></section>
+<section class="section" style="padding-top:0"><div class="wrap"><div class="band"><div><h2>Need help finding the right topic?</h2><p>Get help finding the right account topic, understanding common issues, and choosing the next troubleshooting steps. Call <strong>507-722-0465</strong> for customer assistance.</p></div><a class="call" href="tel:5077220465">☎ Call 507-722-0465</a></div></div></section>
+<section class="section"><div class="wrap"><h2>Start safely</h2><p class="intro">A simple way to work through account problems.</p><div class="steps"><article class="step"><div class="stepNum">1</div><h3>Choose your issue</h3><p>Search above or select the topic that best matches your situation.</p></article><article class="step"><div class="stepNum">2</div><h3>Use official resources</h3><p>Follow instructions on Facebook's own website or app for your account.</p></article><article class="step"><div class="stepNum">3</div><h3>Protect your details</h3><p>Never disclose passwords, one-time login codes, recovery codes or payment PINs.</p></article></div></div></section>
+</main><footer><div class="wrap foot"><div class="footer-about"><strong>Service Notice:</strong> We provide guidance for Facebook account issues. We are not Facebook or Meta support. For official help, visit <a href="https://www.facebook.com/help/">Meta’s Help Center</a>.</div><div>© <span id="year"></span> Facebook Account Help Guide. All rights reserved.</div><div><strong>Customer assistance</strong><br><a href="tel:5077220465">507-722-0465</a></div><div>Facebook and Meta are trademarks of their respective owners.</div></div></footer>
+<script>
+const form=document.getElementById('topicForm');
+const search=document.getElementById('topicSearch');
+const cards=[...document.querySelectorAll('.card')];
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  const q=search.value.trim();
+  if(!q){search.focus();return;}
+  const matches=cards.filter(card=>(card.innerText+' '+card.dataset.terms).toLowerCase().includes(q.toLowerCase()));
+  const titles=matches.map(card=>({
+    title:card.querySelector('h3').textContent,
+    description:card.querySelector('p').textContent,
+    terms:card.dataset.terms,
+    url:card.querySelector('a').href
+  }));
+  window.location.href='help-details.html?query='+encodeURIComponent(q)+'&results='+encodeURIComponent(JSON.stringify(titles));
+});
+</script><script>document.getElementById("year").textContent=new Date().getFullYear();</script></body></html>
